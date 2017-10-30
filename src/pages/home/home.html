@@ -1,14 +1,24 @@
-<ion-header>
+<ion-header class="main_header">
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+    <div class="nav_content">
+      <ion-title class="logo">
+        Digital Nomad Kid
+      </ion-title>
+      <div class="main_nav">
+        <a class="main_nav_tabs" (click)="goToCourses()">About</a>
+        <a class="main_nav_tabs" (click)="goToCourses()">Courses</a>
+        <a class="main_nav_tabs" (click)="goToLogin()">My Account</a>
+        <a class="main_nav_tabs" (click)="goToCourses()">Locations</a>
+        <a class="main_nav_tabs" (click)="goToCourses()">Contact</a>
+      </div>
+      <button ion-button class="Sign Out" (click)="logOut()">
+        Sign in
+      </button>
+
+    </div>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
 </ion-content>

@@ -1,0 +1,17 @@
+.course_main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.course_left_panel {
+  display: flex;
+  background-color: aquamarine;
+  flex: 1 1;
+  height: 100%;
+}
+.course_main_panel {
+  display: flex;
+  flex: 2 2;
+  height: 100%;
+}
