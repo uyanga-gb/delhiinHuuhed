@@ -6,14 +6,14 @@ import {NavParams} from "ionic-angular";
   templateUrl: 'course.html'
 })
 export class CoursePage implements OnInit{
-  course_name: string;
   course: object;
 
   constructor(private navParams: NavParams){
 
   }
   ngOnInit(){
-    this.course_name = this.navParams.get('course_name');
+    this.course = this.navParams.get('selected_course');
   }
+
 
 }

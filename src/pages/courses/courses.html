@@ -7,10 +7,11 @@
 </ion-header>
 
 
-<ion-content padding class="courses_container">
-  <div class="course_content" (click)="loadCourse('Python Intro')">Python Intro</div>
-  <div class="course_content" (click)="loadCourse('Web Design')">Web Design</div>
-
+<ion-content padding class="courses_container" >
+   <div class="course_content" *ngFor="let course of dhCrsMgr.allCourses" (click)="loadCourse(course)">
+     <div class="courseTitle">{{course.name}}</div>
+     <div class="courseDesc">{{course.description}}</div>
+   </div>
 </ion-content>
 <ion-footer padding>
   <p>this is footer</p>

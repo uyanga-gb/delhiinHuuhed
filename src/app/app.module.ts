@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import {CoursesPage} from "../pages/courses/courses";
 import {CoursePage} from "../pages/courses/course/course";
 import {LoginPage} from "../pages/login/login";
+import {DHCourseManager} from "../providers/dh-course-manager/dh-course-manager";
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import {LoginPage} from "../pages/login/login";
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    DHCourseManager
   ]
 })
 export class AppModule {}

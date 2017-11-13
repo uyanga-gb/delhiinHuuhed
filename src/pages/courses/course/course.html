@@ -1,17 +1,17 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-     {{course_name}}
+     {{course.name}}
     </ion-title>
   </ion-navbar>
 </ion-header>
 <ion-content padding>
-  <div class="course_main">
+  <div class="course_main" *ngFor="let challenge of dhCrsMgr.courseChallenges">
     <div class="course_left_panel">
-      <!--<div *ngFor="part in parts" ngModel="part">-->
+      <!--<div *ngFor="challenge in challenges" ngModel="challenge">-->
 
-      </div>
+      <!--</div>-->
     <div class="course_main_panel"></div>
   </div>
-
+  </div>
 </ion-content>

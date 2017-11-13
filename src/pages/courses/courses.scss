@@ -1,10 +1,12 @@
 page-courses {
-
+  display: flex;
 }
 
 .courses_container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
 .course_content {
@@ -12,8 +14,24 @@ page-courses {
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 10px hsla(0,0%,53%,.5);
-  position: relative;
+  margin: 10px;
   height: 200px;
   width: 200px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.courseTitle{
+  display: flex;
   justify-content: center;
+  align-content: center;
+  justify-self: flex-start;
+  height: 10%;
+  background-color: #007aff;
+}
+.courseDesc{
+  display: flex;
+  justify-content: center;
+  background-color: rgba(18, 152, 206, 0.7);
+  height: 30%;
+  justify-self: flex-end;
 }
