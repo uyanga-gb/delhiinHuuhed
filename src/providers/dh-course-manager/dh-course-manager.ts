@@ -7,7 +7,7 @@ import {ChallengeListItem} from "./ChallengeListItem";
 import {LectureNoteListItem} from "./LectureNoteListItem";
 @Injectable()
 export class DHCourseManager {
-  allCourses: [CourseListItem];
+  allCourses: [any];
   allChallenges: [ChallengeListItem];
   allLectureNotes: [LectureNoteListItem];
     constructor(){

@@ -10,6 +10,12 @@ import {CoursesPage} from "../pages/courses/courses";
 import {CoursePage} from "../pages/courses/course/course";
 import {LoginPage} from "../pages/login/login";
 import {DHCourseManager} from "../providers/dh-course-manager/dh-course-manager";
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+import {AngularFireDatabaseModule} from 'angularfire2/database';
+import {AngularFireModule} from 'angularfire2';
+import { FirebaseProvider } from '../providers/firebase/firebase';
+import {firebaseConfig} from '../environments/firebase.config';
 
 @NgModule({
   declarations: [
@@ -21,7 +27,11 @@ import {DHCourseManager} from "../providers/dh-course-manager/dh-course-manager"
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    FormsModule,
+    HttpModule,
+    AngularFireDatabaseModule,
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -35,7 +45,8 @@ import {DHCourseManager} from "../providers/dh-course-manager/dh-course-manager"
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    DHCourseManager
+    DHCourseManager,
+    FirebaseProvider
   ]
 })
 export class AppModule {}

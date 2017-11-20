@@ -9,7 +9,9 @@
     "build": "ionic-app-scripts build",
     "lint": "ionic-app-scripts lint",
     "ionic:build": "ionic-app-scripts build",
-    "ionic:serve": "ionic-app-scripts serve"
+    "ionic:serve": "ionic-app-scripts serve",
+    "populate-db": "./node_modules/.bin/ts-node src/populate-db.ts",
+    "batch-server": "./node_modules/.bin/ts-node ./batch-server.ts"
   },
   "dependencies": {
     "@angular/common": "4.4.4",
@@ -24,6 +26,8 @@
     "@ionic-native/splash-screen": "4.3.2",
     "@ionic-native/status-bar": "4.3.2",
     "@ionic/storage": "2.0.1",
+    "angularfire2": "^5.0.0-rc.4",
+    "firebase": "^4.6.2",
     "ionic-angular": "3.8.0",
     "ionicons": "3.0.0",
     "rxjs": "5.4.3",
@@ -32,7 +36,8 @@
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.0.1",
+    "ts-node": "^3.3.0",
     "typescript": "2.3.4"
   },
-  "description": "An Ionic project"
+  "description": "Delhiin Huuhed Project"
 }
